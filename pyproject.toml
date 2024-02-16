@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "A pretend reservations system for Rao's of New York."
+authors = ["Colin Fristoe <colin.fristoe@biograph.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.2"
+sqlalchemy = "^2.0.25"
+uvicorn = {extras = ["standard"], version = "^0.27.0.post1"}
+
+[tool.poetry.group.dev.dependencies]
+freezegun = "^1.4.0"
+httpx = "^0.26.0"
+pytest = "^8.0.0"
+ruff = "^0.2.1"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I001"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
