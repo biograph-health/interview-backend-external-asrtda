@@ -73,3 +73,10 @@ poetry run pytest -v .
 ```
 
 Once you are able to run and test the app, your setup is complete.
+
+## Use of AI-based coding assistance
+- At the start of the interview: Let your interviewer know if you plan to use AI tools.
+- Expect to explain your work:
+  - Before coding: Outline your approach, trade-offs, and expected outcomes.
+  - After coding: Walk through the solution, review AI-generated code, and iterate if needed.
+- No penalty for opting out: Choosing not to use AI is completely fine—your problem-solving skills and technical insight will remain the focus of evaluation.
